@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp"
+    android:background="#c6dde7"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hello User!"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:textSize="30sp"
+            android:textColor="@color/blueee"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageview"
+
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Start a new journey"
+            android:textSize="20dp"
+            android:textColor="@color/blueee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageview"
+            app:layout_constraintTop_toBottomOf="@id/textview"
+            />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="105dp"
+            android:layout_height="98dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textview"
+            tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="414dp"
+            android:layout_height="199dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageview">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="current_affairs"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/categoriesborder">
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        android:layout_width="135dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/bus"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Current Affairs"
+                        android:textColor="@color/blueee"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="NotSibling" />
+
+                    <ImageView
+                        android:id="@+id/bus"
+                        android:layout_width="84dp"
+                        android:layout_height="69dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/currentaffairs" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="english_grammer"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/categoriesborder">
+
+                    <TextView
+                        android:id="@+id/textview4"
+                        android:layout_width="142dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageview3"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="English Grammar"
+                        android:textStyle="bold"
+                        android:textColor="@color/blueee"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageview3"
+                        android:layout_width="93dp"
+                        android:layout_height="66dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/englishgrammer" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="414dp"
+            android:layout_height="199dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="mathematics"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/categoriesborder">
+
+                    <TextView
+                        android:id="@+id/textview6"
+                        android:layout_width="116dp"
+                        android:layout_height="39dp"
+                        android:layout_below="@+id/bus1"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Mathematics"
+                        android:textStyle="bold"
+                        android:textColor="@color/blueee"
+                        android:textSize="18sp"
+                        tools:ignore="NotSibling" />
+
+                    <ImageView
+                        android:id="@+id/bus1"
+                        android:layout_width="82dp"
+                        android:layout_height="69dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/maths" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="programming_language"
+
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/categoriesborder">
+
+                    <TextView
+                        android:id="@+id/textview7"
+                        android:layout_width="115dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/train"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Programming Language"
+                        android:textStyle="bold"
+                        android:textColor="@color/blueee"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/train"
+                        android:layout_width="86dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/codep" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout3"
+            android:layout_width="414dp"
+            android:layout_height="199dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="computer_basics"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/categoriesborder">
+
+                    <TextView
+                        android:id="@+id/textview8"
+                        android:layout_width="166dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/cycle"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Computer Basics"
+                        android:textStyle="bold"
+                        android:textColor="@color/blueee"
+                        android:textSize="18sp"
+                        tools:ignore="NotSibling" />
+
+                    <ImageView
+                        android:id="@+id/cycle"
+                        android:layout_width="75dp"
+                        android:layout_height="69dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/compbasic" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="sports">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/categoriesborder">
+
+                    <TextView
+                        android:id="@+id/textview9"
+                        android:layout_width="101dp"
+                        android:layout_height="34dp"
+                        android:layout_below="@+id/airplane"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Sports"
+                        android:textStyle="bold"
+                        android:textColor="@color/blueee"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/airplane"
+                        android:layout_width="75dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_height="69dp"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/sports" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>
